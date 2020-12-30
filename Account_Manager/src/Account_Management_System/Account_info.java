@@ -6,8 +6,6 @@ public class Account_info {
     private int balance;
 
 
-    //private String pin;
-
     void cash_out(int amount){
         if(amount > balance){
             return;
