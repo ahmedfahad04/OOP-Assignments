@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class User {
     public void show_account_details(){
-        int count = 1;
         Scanner sc = new Scanner(System.in);
-        Account_info first = new Account_info();
-        System.out.println("Enter Account details to open your account: ");
 
+        Account_info first = new Account_info();
+
+        System.out.println("Enter Account details to open your account: ");
         System.out.println("Enter your name: ");
         String user_name = sc.nextLine();
         System.out.println("Enter your mobile number: ");
@@ -29,7 +29,7 @@ public class User {
         System.out.println("Name: " + first.getAccount_holder_name());
         System.out.println("Mobile no. " + first.getAccount_holder_mobile_number());
         System.out.println("Added Money: " + cash_in);
-        System.out.println("Cashed out: " + cash_out);
+        System.out.println("Requested Cashed out amount: " + cash_out);
 
         if(cash_in>=cash_out) {
             System.out.println("Remaining Balance: " + first.my_balance());
