@@ -3,22 +3,30 @@ package Account_Management_System;
 public class Account_info {
     private String account_holder_name ;
     private String account_holder_mobile_number;
-    private int balance;
+    private double balance;
+    private String pin;
+
 
     // constructor
-    public Account_info(String user_name, String user_phone){
+    public Account_info(String user_name, String user_phone, String user_pin){
         this.account_holder_name = user_name;
         this.account_holder_mobile_number = user_phone;
+        this.pin = user_pin;
     }
 
     // cash out
-    void cash_out(int amount){
-        if(amount > balance){
-            System.out.println("Cash out Failed due to insufficient Balance.");
+    void cash_out(int amount, String pin_code){
+        if(this.pin == pin_code){
+            if(amount > balance){
+                System.out.println("Cash out Failed due to insufficient Balance.");
+            }
+            else {
+                this.balance -= amount;
+                System.out.println("Cash Out: " + amount);
+            }
         }
-        else {
-            this.balance -= amount;
-            System.out.println("Cash Out: " + amount);
+        else{
+            System.out.println("Wrong Password. Access Denied!");
         }
     }
 
@@ -27,6 +35,7 @@ public class Account_info {
         this.balance += amount2;
         System.out.println("Cash in: " + amount2);
     }
+
 
     // show balance
     void my_balance(){
