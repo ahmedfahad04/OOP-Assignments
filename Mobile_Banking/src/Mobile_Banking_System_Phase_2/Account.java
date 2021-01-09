@@ -19,7 +19,7 @@ public class Account {
         this.pin = pin;
     }
 
-    //==> Different operations(cash out, add money, send money, update pin, to string)##############
+    //==> Different operations(cash out, add money, send money, update pin, to string)
     // cash out
     void withdraw(double amount, String pin_code) {
 
@@ -127,13 +127,13 @@ public class Account {
     public String toString() {
         return "\nAccount Details, \n" +
                 "--------------------------------------------------------------\n" +
-                "\tAccount Holder Name:- " + account_holder_name + '\n' +
-                "\tMobile Number:- " + mobile_number + '\n' +
-                "\tBalance:- " + balance + "/-" +'\n' +
+                "\tName: " + account_holder_name + '\n' +
+                "\tMobile Number: " + mobile_number + '\n' +
+                "\tBalance: " + balance + "/-" +'\n' +
                 "--------------------------------------------------------------\n";
     }
 
-    //==> function to edit Cash_out_charge#####################################################
+    //==> function to edit Cash_out_charge
     public void setCash_out_charge(double charge){
         this.cash_out_charge = charge;
     }
