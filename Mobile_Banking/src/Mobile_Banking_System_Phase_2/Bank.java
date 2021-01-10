@@ -8,6 +8,7 @@ public class Bank {
         Nagad solaiman = new Nagad("Mr. Solaiman Shukhon", "01815047916", "1234");
 
         //Bkash
+        System.out.println("###################### Bkash ######################");
         wahid_reza.add_money(2500);
         wahid_reza.send_money(1200, "01822016195", "2547");
         wahid_reza.withdraw(1000, "2547");
@@ -16,6 +17,7 @@ public class Bank {
         System.out.println(wahid_reza);
 
         //Rocket
+        System.out.println("###################### Rocket ######################");
         mizan.add_money(10000);
         mizan.set_new_pin("01533484399", "1254");
         mizan.withdraw(6000, "1254");
@@ -25,6 +27,7 @@ public class Bank {
         System.out.println(mizan);
 
         //Nagad
+        System.out.println("###################### Nagad ######################");
         solaiman.add_money(2000);
         solaiman.withdraw(300,"1234");
         solaiman.add_money(5000);
