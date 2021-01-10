@@ -1,10 +1,8 @@
 // Parent Class
 package Mobile_Banking_System_Phase_2;
 
-import java.util.Scanner;
 
 public class Account {
-    Scanner sc = new Scanner(System.in);
     private String account_holder_name;
     private String mobile_number;
     private double balance;
